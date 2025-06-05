@@ -5,42 +5,41 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>虎尾鎮</title>
-<!-- Bootstrap -->
 <link href="css/bootstrap-4.4.1.css" rel="stylesheet">
 <style>
 body {
-    background-color: #f0fff0; /* 淡綠色背景 */
+    background-color: #f0fff0;
 }
 
 .carousel-inner .carousel-item img {
-    width: 900px; /* 設置圖片寬度 */
-    height: 600px; /* 設置圖片高度 */
-    object-fit: cover; /* 保持圖片比例並填滿容器 */
+    width: 900px;
+    height: 600px;
+    object-fit: cover;
 }
 
 #image-caption {
-    font-size: 16px; /* 調整文字大小 */
-    margin-top: 10px; /* 調整文字與圖片之間的間距 */
-    text-align: center; /* 文字置中對齊 */
-    margin-bottom: 20px; /* 添加底部間距 */
-    max-width: 900px; /* 設定最大寬度 */
-    margin-left: auto; /* 讓文字置中 */
-    margin-right: auto; /* 讓文字置中 */
+    font-size: 16px;
+    margin-top: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #image-caption p {
-    font-family: '標楷體', sans-serif; /* 設置字體 */
-    color: #333; /* 設置文字顏色 */
-    font-size: 20px; /* 設置文字大小 */
-    line-height: 1.5; /* 設置行高 */
-    padding: 20px; /* 設置文字內邊距 */
-    border: 2px solid #555; /* 添加框框 */
-    border-radius: 10px; /* 添加圓角 */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 添加陰影 */
-    display: inline-block; /* 讓框框包裹文字 */
-    background-color: #f9f9f9; /* 添加背景顏色 */
-	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* 添加文字陰影 */
-	background-color: #e3f2fd; /* 淡藍色 */
+    font-family: '標楷體', sans-serif;
+    color: #333;
+    font-size: 20px;
+    line-height: 1.5;
+    padding: 20px;
+    border: 2px solid #555;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    background-color: #f9f9f9;
+	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+	background-color: #e3f2fd;
 }
 
 
@@ -73,7 +72,6 @@ body {
     <div class="row">
       <div class="col text-center">
         <div id="image-caption">
-          <!-- 這裡放置文字說明 -->
           <p>雲林布袋戲館位於虎尾市區最熱鬧的街口，是虎尾發展觀光時最早、也最具知名度的虎尾景點之一。原為雲林縣舊警察分局的布袋戲館，外觀以三合院的大氣格局、搭配二層樓的磚木造廳舍，是虎尾地區最具氣勢的官方建築，黃色的磚牆搭配蒂芬妮藍的窗框很讓人駐足慢慢欣賞，館內展示著偶戲的發展史、及相關文物保存等，小時候覺得布袋戲偶看久了很可怕，長大後觀念改變，進而發現原來每尊布袋戲偶從顏色、穿著、臉譜等等都分別代表不同的身分與職掌，也代表著一齣戲的靈魂，擁有著不同的性格，對於喜歡布袋戲的朋友是個好所在。</p>
         </div>
       </div>
@@ -121,19 +119,15 @@ body {
   </div>
 </div>
 
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
 <script src="js/jquery-3.4.1.min.js"></script>
-<!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="js/popper.min.js"></script> 
 <script src="js/bootstrap-4.4.1.js"></script>
 <script>
-// 當點擊carouselExampleIndicators2中的圖片時，切換到carousel1中相同的圖片
 $('.carousel-link').click(function(e) {
   e.preventDefault();
   var slideIndex = $(this).data('slide-index');
   $('#carousel1').carousel(slideIndex);
   
-  // 更新文字說明
   var imageAlt = $(this).find('img').attr('alt');
   $('#image-caption p').text(imageAlt);
 });
