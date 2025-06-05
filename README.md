@@ -20,6 +20,6 @@
 
 ## 操作
 
-1. 開啟網站：[https://introduce.github.io/](https://introduce.github.io/)
+1. 開啟網站：[雲林景點介紹](https://ygvmp1105.github.io/Introduce.github.io/)
 2. 點選任一鄉鎮按鈕進入對應頁面
 3. 瀏覽景點簡介，點擊最下方的圖片查看更多介紹
