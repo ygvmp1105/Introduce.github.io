@@ -5,42 +5,41 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>北港鎮</title>
-<!-- Bootstrap -->
 <link href="css/bootstrap-4.4.1.css" rel="stylesheet">
 <style>
 body {
-    background-color: #f0fff0; /* 淡綠色背景 */
+    background-color: #f0fff0;
 }
 
 .carousel-inner .carousel-item img {
-    width: 900px; /* 設置圖片寬度 */
-    height: 600px; /* 設置圖片高度 */
-    object-fit: cover; /* 保持圖片比例並填滿容器 */
+    width: 900px;
+    height: 600px;
+    object-fit: cover;
 }
 
 #image-caption {
-    font-size: 16px; /* 調整文字大小 */
-    margin-top: 10px; /* 調整文字與圖片之間的間距 */
-    text-align: center; /* 文字置中對齊 */
-    margin-bottom: 20px; /* 添加底部間距 */
-    max-width: 900px; /* 設定最大寬度 */
-    margin-left: auto; /* 讓文字置中 */
-    margin-right: auto; /* 讓文字置中 */
+    font-size: 16px;
+    margin-top: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #image-caption p {
-    font-family: '標楷體', sans-serif; /* 設置字體 */
-    color: #333; /* 設置文字顏色 */
-    font-size: 20px; /* 設置文字大小 */
-    line-height: 1.5; /* 設置行高 */
-    padding: 20px; /* 設置文字內邊距 */
-    border: 2px solid #555; /* 添加框框 */
-    border-radius: 10px; /* 添加圓角 */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 添加陰影 */
-    display: inline-block; /* 讓框框包裹文字 */
-    background-color: #f9f9f9; /* 添加背景顏色 */
-	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* 添加文字陰影 */
-	background-color: #e3f2fd; /* 淡藍色 */
+    font-family: '標楷體', sans-serif;
+    color: #333;
+    font-size: 20px;
+    line-height: 1.5;
+    padding: 20px;
+    border: 2px solid #555;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    background-color: #f9f9f9;
+	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+	background-color: #e3f2fd;
 }
 
 
@@ -73,7 +72,6 @@ body {
     <div class="row">
       <div class="col text-center">
         <div id="image-caption">
-          <!-- 這裡放置文字說明 -->
           <p>北港朝天宮是旅客到北港必訪的北港景點。古色古香的廟宇為國定古蹟，俗稱北港媽祖廟，奉祀天上聖母媽祖，每當媽祖繞境及除夕夜搶頭香，北港小鎮總是熱血沸騰，幾乎成了不夜城。而台灣這座島上有三分之二的人信仰媽祖，而北港朝天宮是台灣規模最大、香火最鼎盛的媽祖廟，每年總有百萬香客前來朝聖。特別的是，世界上有近5000座媽祖廟，而北港朝天宮不僅保有全國媽祖廟唯一以佛教進行祭祀儀典的傳統，更與福建莆田湄洲媽祖廟、天津天后宮並稱世界三大媽祖廟。每年舉辦的「北港迎媽祖」更是為台灣國家指定的重要民俗活動，是台灣人的信仰中心！</p>
         </div>
       </div>
@@ -115,19 +113,15 @@ body {
   </div>
 </div>
 
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
 <script src="js/jquery-3.4.1.min.js"></script>
-<!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="js/popper.min.js"></script> 
 <script src="js/bootstrap-4.4.1.js"></script>
 <script>
-// 當點擊carouselExampleIndicators2中的圖片時，切換到carousel1中相同的圖片
 $('.carousel-link').click(function(e) {
   e.preventDefault();
   var slideIndex = $(this).data('slide-index');
   $('#carousel1').carousel(slideIndex);
   
-  // 更新文字說明
   var imageAlt = $(this).find('img').attr('alt');
   $('#image-caption p').text(imageAlt);
 });
